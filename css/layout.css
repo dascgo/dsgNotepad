@@ -1,0 +1,127 @@
+body{ margin: 30px; padding-bottom: 50px; font-family: Arial; font-size: 120%; }
+#list p.deleted{ color: red; text-shadow: #cecece 2px 2px 3px; }
+#list p.trashed{ color: #ccc; text-shadow: white 2px 2px 3px; }
+#list p.done{ color: green; text-shadow: #cecece 2px 2px 3px; }
+#list p.editing{ color: #ccc; text-shadow: #cecece 2px 2px 3px; }
+.input_edit{ background-color: #e3e8ee; }
+
+#list p{
+  margin: 4px;
+	margin-left: 0;
+  padding: 6px;
+  padding-left: 12px;
+  border-bottom: 1px solid #f1f1f1;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+	text-shadow: #cecece 1px 1px 2px;
+}
+
+#list p.selected{
+  border-radius: 6px;
+  background-color: #f9f9f9;
+	border: 1px solid #dddddd;
+	text-shadow: white 1px 1px 2px;
+	-moz-box-shadow: inset 0 0 10px #e5e5e5;
+}
+
+#add input{
+  width: 98%;
+  font-family: Arial;
+  font-size: 120%;
+  border: 0;
+	border-radius: 6px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 15px #888;
+  padding: 6px;
+	margin: 10px 6px 6px 6px;
+	background-color: #f1f1f1;
+	text-shadow: #b4b4b4 2px 2px 3px;
+}
+
+#add{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 66px;
+	text-align: center;
+}
+
+#help{
+  position: fixed;
+	top: -482px;
+	left: 50%;
+	margin: 0 0 0 -400px;
+	background: #e5e5e5 url(../images/pattern.gif) top left repeat;
+	font-size: 12px;
+	color: #333;
+	box-shadow: 0 0 25px #888;
+	border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#table_container{
+  height: 400px;
+  width: 800px;
+  overflow: auto;
+}
+#help_toggle{ cursor: pointer; text-align: center; border-top: 1px solid rgba(0,0,0,0.2) !important; background-color: #e5e5e5 !important; }
+#help table{ box-shadow: 0px 0px 10px #7f7f7f; }
+#help table tr td:first-child{ text-align: right; }
+#help table tr td:last-child, .command_text{ font-size: 14px !important; }
+#help table tr td{
+  background-color: #f1f1f1;
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,0.8);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.help_header{
+  font-size: 13px !important;
+  text-align: left !important;
+  background-color: #ccc !important;
+  padding: 7px 10px !important;
+  background: #cedce1 -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.0) 60%, rgba(255,255,255,0) 100%) !important;
+  color: #45646f !important;
+  text-shadow: #fff 1px 1px 1px !important;
+  border-top: 0 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.5) !important;
+}
+
+.btn{
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.43) 20%, rgba(255,255,255,0) 100%);
+  box-shadow: inset 0px 0px 3px #fff;
+  color: rgba(0,0,0,0.6);
+  box-shadow: 0 0 3px #999;
+  margin-left: 5px;
+}
+
+.info a{ color: #6089b9; }
+.info b{ text-shadow: #b4b4b4 1px 1px 1px; color: #555; font-size: 17px; }
+.info{
+  color: #888;
+  background: #e5e5e5 url(../images/logo.png) 10px 15px no-repeat;
+  padding: 10px 10px 10px 34px;
+  text-align: left;
+  line-height: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.2) !important;
+}
+
+#list p.deleted a{ color: red; text-shadow: #cecece 2px 2px 3px; }
+#list p.trashed a{ color: #ccc; text-shadow: white 2px 2px 3px; }
+#list p.done a{ color: green; text-shadow: #cecece 2px 2px 3px; }
+#list p.editing a{ color: #ccc; text-shadow: #cecece 2px 2px 3px; }
+
+.plugin_info{
+  font-size: 12px;
+  color: #9c9c9c;
+}

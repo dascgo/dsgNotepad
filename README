@@ -1,0 +1,5 @@
+A simple, keyboard driven todo list. 
+
+To install, place these files in your localhost (because data is saved to localStorage) and access.
+
+First time use will open the help which will show you the key commands.

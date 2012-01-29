@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link type="text/css" href="css/layout.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="list"></div>
+    <div id="add"><input type="text" value=""/></div>
+    <div id="help">
+      <div class="info">
+        <b>dsgNotepad</b><br/>
+        by Daniel Goodwin (<a href="http://twitter.com/dsg">@dsg</a> on twitter if you need help)<br/>
+      </div>
+      <div id="table_container">
+        <table width="100%" cellpadding="5" cellspacing="0">
+          <tr>
+            <td colspan="3" class="help_header">
+              <b>Keyboard Shortcuts:</b>
+            </td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">&crarr;</span></td>
+            <td>Adds a typed in item to list.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">&uarr;</span></td>
+            <td>Select the line above the current selection.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">shift</span> <span class="btn">&uarr;</span></td>
+            <td>Swaps current selected item with item above it.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">&darr;</span></td>
+            <td>Select the line below the current selection.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">shift</span> <span class="btn">&darr;</span></td>
+            <td>Swaps current selected item with item below it.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">shift</span> <span class="btn">&larr;</span></td>
+            <td>Decreases indent level.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">option</span> <span class="btn">&larr;</span></td>
+            <td>Decreases completeness. If item is grayed out, the next decrease will delete it.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">shift</span> <span class="btn">&rarr;</span></td>
+            <td>Increases indent level.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">option</span> <span class="btn">&rarr;</span></td>
+            <td>Increases completeness.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap><span class="btn">esc</span></td>
+            <td>When nothing selected, makes current line editable. When something selected, disables editing of current line.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="help_header">
+              <b>Commands:</b> The input area accepts commands. Commands are preceeded with a "\".
+            </td>
+          </tr>
+          <tr>
+            <td nowrap valign="top" class="command_text">\h, \help</td>
+            <td>Toggles this help area.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td nowrap valign="top" class="command_text">\tweet</td>
+            <td>Will take you to twitter with the current selection set to be tweeted.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <!-- <tr id="plugin_area">
+            <td colspan="3" class="help_header">
+              <b>Plug Ins:</b> 
+              <input type="text" id="new_plugin_url" value="" placeholder="url to plugin script">
+              <input type="button" id="new_plugin_btn" value="add">
+            </td>
+          </tr> -->
+        </table>
+      </div>
+      <div id="help_toggle">
+        <img src="images/gripper.png" width="20" height="12"/>
+      </div>
+    </div>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
